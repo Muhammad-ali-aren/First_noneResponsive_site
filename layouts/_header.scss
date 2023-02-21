@@ -1,0 +1,101 @@
+.header {
+  background-image: linear-gradient(to right, $color-primary, $color-seconday);
+  grid-column: full-start/ full-end;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  grid-template-columns: repeat(8, minmax(min-content, 1fr));
+
+  &__listIcon {
+    margin-top: 3.5rem;
+    margin-left: 3rem;
+    height: 3rem;
+    width: 3rem;
+    fill: white;
+    cursor: pointer;
+  }
+  &__nav {
+    grid-column: 2 / 8;
+    grid-row: 1 / 2;
+    align-self: self-end;
+    padding-top: -2rem;
+  }
+  //   &__logo {
+  //   }
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-white;
+    text-align: center;
+    list-style: none;
+  }
+  &__link {
+    display: inline-block;
+    padding: 1.5rem 2.5rem;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: $color-black;
+  }
+  &__link-blue:hover {
+    color: $color-primary;
+  }
+  &__link--blue {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+  &__sociaMedias {
+    grid-column: 8/ -1;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+    justify-content: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__socialMIcon {
+    height: 2.25rem;
+    width: 2.25rem;
+    fill: white;
+    cursor: pointer;
+  }
+  
+  &__banner {
+    grid-column: 2 / 4;
+  }
+  &__intro {
+    grid-column: 5 / 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__heading1 {
+    color: $color-white;
+    font-size: 5.8rem;
+    font-weight: 600;
+    line-height: 1.5;
+    span {
+      display: block;
+      color: $color-white;
+      font-weight: 500;
+    }
+  }
+  &__text {
+    color: $color-white;
+    line-height: 1.2;
+    font-size: 1.9rem;
+    margin-top: 2rem;
+  }
+  &__btn {
+    display: inline-block;
+    height: 5rem;
+    width: 15rem;
+    font-size: 1.6rem;
+    // padding: 5rem 15rem;
+    border-radius: 5rem;
+    border: none;
+    margin-top: 4rem;
+    color: $color-black;
+    align-self: start;
+    cursor: pointer;
+  }
+}

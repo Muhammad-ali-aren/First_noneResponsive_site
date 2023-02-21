@@ -1,0 +1,30 @@
+.features {
+  background-image: linear-gradient(to right, $color-primary, $color-seconday);
+  grid-column: full-start/ full-end;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.feature {
+  color: $color-white;
+  &__infobox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.9rem;
+    text-transform: capitalize;
+  }
+
+  &__icon {
+    height: 5.5rem;
+    width: 5.5rem;
+    fill: $color-white;
+  }
+  &__count {
+    margin-top: 1.5rem;
+  }
+  &__text {
+    margin-top: 1.5rem;
+  }
+}

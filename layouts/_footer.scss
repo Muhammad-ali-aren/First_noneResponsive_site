@@ -1,0 +1,25 @@
+.footer {
+  // background-color: black;
+  grid-column: center-start/center-end;
+  padding: 5rem 0;
+  &__sm {
+    display: flex;
+    justify-content: center;
+  }
+  &__smIcon {
+    height: 2rem;
+    width: 2rem;
+    // padding: 0 2rem;
+    margin: 0 1.2rem;
+    cursor: pointer;
+  }
+  &__authour {
+    color: rgba($color-grey-light-2, 0.8);
+    text-align: center;
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+    span {
+      color: $color-primary;
+    }
+  }
+}
